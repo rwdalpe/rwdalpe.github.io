@@ -1,0 +1,30 @@
+extends layout
+
+block append header
+  nav
+    if prevPage
+      a(href=prevPage.url) « Newer
+    else
+      a(href='archive.html') « Archives
+    if nextPage
+      a(href=nextPage.url) Next page »
+
+block content
+  include author
+  each article in articles
+    article.article
+      header
+        if article.title !== "Untitled"
+          p.date
+            span= moment.utc(article.date).format('DD. MMMM YYYY')
+          h2
+            a(href=article.url)= article.title
+        else
+          h2
+            a(href=article.url)= moment.utc(article.date).format('DD. MMMM YYYY')
+      mixin tags(article)
+      section.content!= typogr(article.html).typogrify()
+
+
+
+

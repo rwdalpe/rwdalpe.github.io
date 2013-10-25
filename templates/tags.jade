@@ -1,0 +1,11 @@
+mixin tags(a)
+    if a.metadata.tags
+        section.tags
+            ul
+                each tag in a.metadata.tags
+                    - var t = contents.tags[tag + '.json']
+                    li
+                        if t
+                            a(href=contents.index.url + 'tags/' + tag + '.html')= t.metadata.name
+                        else
+                            =tag

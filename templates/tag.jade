@@ -1,0 +1,22 @@
+extends layout
+
+block prepend title
+  | #{ "Articles tagged with " + page.metadata.name + " - "}
+
+
+block content
+    if page.metadata.id
+        section.tagged_articles
+            h2= "Articles tagged with " + page.metadata.name
+            ul
+                - var articles = env.helpers.getArticles(contents);
+                each article in articles
+                    if (article.metadata.tags && article.metadata.tags.indexOf(page.metadata.id) >= 0)
+                        li
+                            a(href=article.url)= (article.title !== "Untitled" ? article.title : moment.utc(article.date).format('DD. MMMM YYYY'))
+    else
+        p 404 Not Found
+
+block prepend footer
+  div.nav
+    a(href=contents.index.url) « Full blog

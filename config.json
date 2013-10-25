@@ -1,0 +1,27 @@
+{
+  "locals": {
+    "url": "",
+    "name": "Winslow Dalpe's Developer Blog",
+    "owner": "Winslow Dalpe",
+    "description": ""
+  },
+  "baseUrl": "/devblog/",
+  "plugins": [
+    "./plugins/paginator.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}

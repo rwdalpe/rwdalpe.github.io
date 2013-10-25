@@ -1,0 +1,32 @@
+!!! 5
+block vars
+  - var bodyclass = null;
+
+html(lang='en')
+  include tags
+  head
+    block head
+      meta(charset='utf-8')
+      title
+        block title
+          = locals.name
+      link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
+      link(rel='stylesheet', href=contents.index.url + 'css/main.css')
+  body
+    div.content-wrap
+        header#title
+            block header
+                div.logo
+                    h1
+                        a(href=contents.index.url)= locals.name
+                    p.description= locals.description
+        section#content
+            block content
+                h2 Welcome to zombocom!
+        footer
+            block footer
+            section.copy
+                p 
+                    &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
+                    a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+                    //- please leave the "powered by" if you use the design

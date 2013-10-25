@@ -1,0 +1,8 @@
+.project
+.settings
+contents
+plugins
+package.json
+node_modules
+deploy.bat
+deploy.sh

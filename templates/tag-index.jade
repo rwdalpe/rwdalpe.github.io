@@ -1,0 +1,18 @@
+extends layout
+
+block prepend title
+  | #{ "Tags - "}
+
+block content
+    section.tags
+        ul
+            - _.each(contents.tags, function(value, key, list){
+            -       if(value.metadata && value.metadata.id) {
+                            li
+                                a(href=contents.index.url + 'tags/' + value.metadata.id + '.html')= value.metadata.name
+            -       }
+            - });
+
+block prepend footer
+  div.nav
+    a(href=contents.index.url) « Full blog
