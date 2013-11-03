@@ -63,7 +63,7 @@ dt {
 }
 
 
-@media (max-width: 40em) { 
+@media all and (max-width: 40em) { 
     body {
         padding: .25em .3em .25em .3em;
     }
@@ -102,7 +102,7 @@ dt {
     }
 }
 
-@media (min-width: 40em) {
+@media all and (min-width: 40em) {
     address {
         float: left;
     }
@@ -134,7 +134,7 @@ dt {
     .position, .degree { display: block;}
 }
 
-@media (min-width: 79em) {
+@media all and (min-width: 79em) {
     #contact {
         position: fixed;
         top: 2em;
