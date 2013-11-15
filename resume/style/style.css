@@ -1,8 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
+
 body {
-    max-width: 8.5in;
+    max-width: 45em;
     margin: 0px auto;
-    padding: .25in .5in .25in .5in;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 1.5em 3em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, dt {
+    font-family: "Roboto", Helvetica, Arial, "DejaVu Sans", sans-serif;
 }
 
 dt {
@@ -40,10 +47,12 @@ dt {
 .clear { clear: both; }
 .org { display: block; }
 .org .name { font-style: italic; }
+.work { margin-left: 0px; }
 .work header {
     background-color: rgb(220, 220, 220);
     padding: .2em;
 }
+.work dl { margin-left: 2.5em; }
 .work dl dt {
     text-align: left;
     font-weight: normal;
@@ -73,9 +82,8 @@ dt {
         text-align: left;
     }
 
-    dt {
-        text-align: center;
-    }
+    dl { margin-left: 0px; }
+    dt { text-align: center; }
     dd {
         margin: 0px;
         padding: 0px;
@@ -94,12 +102,9 @@ dt {
         margin-right: auto; 
     }
 
-    .work dt {
-        text-align: left;
-    }
-    .work dd {
-        margin-left: 2.5em;
-    }
+    .work dl { margin-left: 0px; }
+    .work dt { text-align: left; }
+    .work dd { margin-left: 2.5em; }
 }
 
 @media all and (min-width: 40em) {
@@ -134,7 +139,7 @@ dt {
     .position, .degree { display: block;}
 }
 
-@media all and (min-width: 79em) {
+@media all and (min-width: 75em) {
     #contact {
         position: fixed;
         top: 2em;
@@ -167,7 +172,7 @@ dt {
     html, body {
         margin: 0px;
         padding: 0px;
-        font-size: 10px;
+        font-size: 12pt;
         font-family: serif;
     }
 
@@ -186,7 +191,14 @@ dt {
     #contact .icon { display: none; }
 
     .details { display: none; }
-
+    .work header { 
+        padding: .4em 0px;
+        margin-top: .2em;
+        margin-bottom: .2em;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+    }
+    .work .time { top: .4em; }
 }
 
 @viewport {
