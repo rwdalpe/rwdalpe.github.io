@@ -42,6 +42,7 @@ dt {
     display: inline-block;
 }
 
+.position, .degree { display: block; }
 .award { margin-bottom: .5em; }
 .skill { margin-bottom: .5em; }
 .details { font-size: .8em; }
@@ -137,7 +138,6 @@ dt {
         right: 0px;
         text-align: right;
     }
-    .position, .degree { display: block;}
 }
 
 @media all and (min-width: 75em) {
