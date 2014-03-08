@@ -193,6 +193,7 @@ dt {
     #contact .icon { display: none; }
 
     .details { display: none; }
+    .no-print { display: none; }
     .work header { 
         padding: .4em 0px;
         margin-top: .2em;
