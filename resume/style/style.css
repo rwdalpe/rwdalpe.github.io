@@ -1,10 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
 
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    max-width: 45em;
-    margin: 0px auto;
-    padding: 1.5em 3em;
+    margin: 0px;
+    padding: 0px;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -18,11 +22,28 @@ dt {
     margin: .31em 0px;
 }
 
-#title {
-    text-align: center;
+#resume-header {
+    max-width: 45em;
+    margin: -5em auto 0px auto;
+    padding: 0px 3em 0px 3em;
 }
 
-#contact ul {
+#resume-content {
+    max-width: 45em;
+    margin: 0em auto 0em auto;
+    padding: 1em 3em 1.5em 3em;
+}
+
+#title {
+    text-align: center;
+    margin: 0px;
+    padding-top: .5em;
+    background-color: gray;
+    width: 100%;
+    height: 5em;
+}
+
+#digital-contact {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
@@ -76,7 +97,7 @@ dt {
 
 @media all and (max-width: 40em) { 
     body {
-        padding: .25em .3em .25em .3em;
+        /*padding: .25em .3em .25em .3em;*/
     }
 
     address {
@@ -91,18 +112,27 @@ dt {
         padding: 0px;
     }
 
-    #title { margin-top: 0px; }
-    #contact { text-align: left; }
-    #social { padding-top: 1em; margin-bottom: 1em; }
-
-    .time { display: block; }
-
-    .inline-container { text-align: center; }
-    .inline-container > * { 
-        display: inline-block; 
+    #title {
+        background-color: transparent;
+        height: auto;
+    }
+    #resume-header {
+        margin-top: .25em;
+        padding: 0px .3em 0px .3em; 
+    }
+    #resume-content { padding: .25em .3em .25em .3em; }
+    
+    #digital-contact { 
+        text-align: left;
         margin-left: auto; 
         margin-right: auto; 
     }
+    #social { padding-top: 1em; margin-bottom: 1em; }
+
+    .contact { text-align: center; }
+    .contact > * { display: inline-block; }
+    
+    .time { display: block; }
 
     .work dl { margin-left: 0px; }
     .work dt { text-align: left; }
@@ -114,14 +144,41 @@ dt {
         float: left;
     }
 
-    #main-header { 
-        margin-bottom: 6.31em;
+    #resume-header { 
+        /*margin-bottom: 6.31em;*/
+    }
+    
+    .contact {
+        /**
+        * For IE 6/7 only
+        * Include this rule to trigger hasLayout and contain floats.
+        */
+        *zoom: 1;
+    }
+    
+    /**
+    * For modern browsers
+    * 1. The space content is one way to avoid an Opera bug when the
+    *    contenteditable attribute is included anywhere else in the document.
+    *    Otherwise it causes space to appear at the top and bottom of elements
+    *    that are clearfixed.
+    * 2. The use of `table` rather than `block` is only necessary if using
+    *    `:before` to contain the top-margins of child elements.
+    */
+    .contact:first-of-type:before,
+    .contact:last-of-type:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
     }
 
-    #contact {
+    .contact:last-of-type:after {
+        clear: both;
+    }
+
+    #digital-contact {
         float: right;
     }
-    #contact a {
+    #digital-contact a {
         float: right;
     }
 
@@ -141,20 +198,20 @@ dt {
 }
 
 @media all and (min-width: 75em) {
-    #contact {
+    #digital-contact {
         position: fixed;
-        top: 2em;
+        top: 4.2em;
         right: 2em;
         height: 3em;
         width: 12em;
         text-align: left;
     }
-    #contact a {
+    #digital-contact a {
         float: none;
     }
     #social {
         position: fixed;
-        top: 5em;
+        top: 7.2em;
         right: 2em;
         width: 12em;
         text-align: left;
@@ -190,7 +247,7 @@ dt {
     #title { margin-top: 0px; }
     #social { vertical-align: middle; }
     #social .icon { font-size: 2em; }
-    #contact .icon { display: none; }
+    #digital-contact .icon { display: none; }
 
     .details { display: none; }
     .no-print { display: none; }
