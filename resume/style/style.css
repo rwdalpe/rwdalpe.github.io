@@ -12,6 +12,8 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+a { color: #2E64FE; }
+
 h1, dt {
     font-family: "Roboto", Helvetica, Arial, "DejaVu Sans", sans-serif;
 }
@@ -20,6 +22,14 @@ dt {
     font-weight: bold;
     font-size: 1.25em;
     margin: .31em 0px;
+}
+
+#title {
+    text-align: center;
+    margin: 0px;
+    padding-top: .5em;
+    width: 100%;
+    height: 5em;
 }
 
 #resume-header {
@@ -32,15 +42,6 @@ dt {
     max-width: 45em;
     margin: 0em auto 0em auto;
     padding: 1em 3em 1.5em 3em;
-}
-
-#title {
-    text-align: center;
-    margin: 0px;
-    padding-top: .5em;
-    background-color: gray;
-    width: 100%;
-    height: 5em;
 }
 
 #digital-contact {
@@ -72,8 +73,12 @@ dt {
 .org .name { font-style: italic; }
 .work { margin-left: 0px; }
 .work header {
-    background-color: rgb(220, 220, 220);
-    padding: .2em;
+    margin-top: .5em;
+    background-color: #bdbdbd;
+    box-shadow: 0 0 .15em .03em rgb(132, 132, 132);
+    border: 1px solid #848484;
+    border-radius: .2em;
+    padding: .5em;
 }
 .work dl { margin-left: 2.5em; }
 .work dl dt {
@@ -96,10 +101,6 @@ dt {
 
 
 @media all and (max-width: 40em) { 
-    body {
-        /*padding: .25em .3em .25em .3em;*/
-    }
-
     address {
         margin-bottom: .31em;
         text-align: left;
@@ -113,11 +114,11 @@ dt {
     }
 
     #title {
-        background-color: transparent;
         height: auto;
+        padding: .1em 0px .1em 0px;
     }
     #resume-header {
-        margin-top: .25em;
+        margin-top: .5em;
         padding: 0px .3em 0px .3em; 
     }
     #resume-content { padding: .25em .3em .25em .3em; }
@@ -143,10 +144,15 @@ dt {
     address {
         float: left;
     }
-
-    #resume-header { 
-        /*margin-bottom: 6.31em;*/
+    
+    #digital-contact {
+        float: right;
     }
+    #digital-contact a {
+        float: right;
+    }
+
+    /** http://nicolasgallagher.com/micro-clearfix-hack/ */
     
     .contact {
         /**
@@ -175,18 +181,11 @@ dt {
         clear: both;
     }
 
-    #digital-contact {
-        float: right;
-    }
-    #digital-contact a {
-        float: right;
-    }
-
     .work, .school, .award { position: relative; }
     .work .time { 
         position: absolute; 
-        top: .2em; 
-        right: .2em; 
+        top: .5em; 
+        right: .5em; 
         text-align: right; 
     }
     .school .time, .award .time {
@@ -221,12 +220,12 @@ dt {
     }
 }
 
-
 @media print {
     @page {
         size: auto;
         margin: .25in .5in .25in .5in;
     }
+    
     html, body {
         max-width: 100%;
         margin: 0px;
@@ -244,7 +243,20 @@ dt {
         text-decoration: none;
     }
 
-    #title { margin-top: 0px; }
+    #title {
+        margin-top: 0px;
+        height: auto;
+        border: none;
+        box-shadow: none;
+    }
+    
+    #title, #resume-header, #resume-content {
+        max-width: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    
     #social { vertical-align: middle; }
     #social .icon { font-size: 2em; }
     #digital-contact .icon { display: none; }
@@ -256,7 +268,11 @@ dt {
         margin-top: .2em;
         margin-bottom: .2em;
         border-top: 1px solid #000000;
+        border-left: none;
+        border-right: none;
         border-bottom: 1px solid #000000;
+        box-shadow: none;
+        border-radius: 0px;
     }
     .work .time { top: .4em; }
 }
