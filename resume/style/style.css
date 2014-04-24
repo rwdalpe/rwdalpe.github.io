@@ -41,7 +41,14 @@ dt {
 #resume-content {
     max-width: 45em;
     margin: 0em auto 0em auto;
-    padding: 1em 3em 1.5em 3em;
+    padding: 0em 3em 1.5em 3em;
+}
+
+#resume-content > dl {
+    margin-top: 0em;
+}
+#resume-content > dl > dt {
+    margin-top: .7em;
 }
 
 #digital-contact {
@@ -74,13 +81,14 @@ dt {
 .work { margin-left: 0px; }
 .work header {
     margin-top: .5em;
-    background-color: #bdbdbd;
-    box-shadow: 0 0 .15em .03em rgb(132, 132, 132);
-    border: 1px solid #848484;
-    border-radius: .2em;
-    padding: .5em;
+/*    background-color: #bdbdbd;
+    box-shadow: 0 0 .15em .03em rgb(132, 132, 132);*/
+    border-top: 5px solid #2E64FE;
+    /*border-radius: .2em;*/
+    padding: .75em 0 .5em 0;
 }
-.work dl { margin-left: 2.5em; }
+.work .position { font-weight: bold; }
+/*.work dl { margin-left: 2.5em; }*/
 .work dl dt {
     text-align: left;
     font-weight: normal;
@@ -88,7 +96,7 @@ dt {
 }
 .work dl dd {
     display: list-item;
-    list-style-type: disc;
+    list-style-type: none;
     margin-top: .5em;
     margin-bottom: .5em;
 }
@@ -151,6 +159,10 @@ dt {
     #digital-contact a {
         float: right;
     }
+    
+    #social {
+        margin-bottom: .3em;
+    }
 
     /** http://nicolasgallagher.com/micro-clearfix-hack/ */
     
@@ -184,8 +196,8 @@ dt {
     .work, .school, .award { position: relative; }
     .work .time { 
         position: absolute; 
-        top: .5em; 
-        right: .5em; 
+        top: 1.06em;  
+        right: 0px;
         text-align: right; 
     }
     .school .time, .award .time {
@@ -267,14 +279,8 @@ dt {
         padding: .4em 0px;
         margin-top: .2em;
         margin-bottom: .2em;
-        border-top: 1px solid #000000;
-        border-left: none;
-        border-right: none;
-        border-bottom: 1px solid #000000;
-        box-shadow: none;
-        border-radius: 0px;
     }
-    .work .time { top: .4em; }
+    .work .time { top: .71em; }
 }
 
 @viewport {
