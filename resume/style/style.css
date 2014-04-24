@@ -14,6 +14,11 @@ body {
 
 a { color: #2E64FE; }
 
+dl {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
 h1, dt {
     font-family: "Roboto", Helvetica, Arial, "DejaVu Sans", sans-serif;
 }
@@ -83,7 +88,7 @@ dt {
     margin-top: .5em;
 /*    background-color: #bdbdbd;
     box-shadow: 0 0 .15em .03em rgb(132, 132, 132);*/
-    border-top: 5px solid #2E64FE;
+    border-top: .31em solid #2E64FE;
     /*border-radius: .2em;*/
     padding: .75em 0 .5em 0;
 }
@@ -239,15 +244,15 @@ dt {
     }
     
     html, body {
-        max-width: 100%;
-        margin: 0px;
-        padding: 0px;
-        font-size: 8pt;
-        font-family: serif;
+        max-width: 8.5in;
+        margin: 0in;
+        padding: 0in;
+        font-size: 10pt;
+        font-family: "Times New Roman", "DejaVu Serif", serif;
     }
 
-    h1, h2, h3, dt {
-        font-family: sans-serif;
+    h1, h2, h3, dt, .work header {
+        font-family: "Roboto", Helvetica, Arial, "DejaVu Sans", sans-serif;
     }
 
     a {
@@ -256,7 +261,7 @@ dt {
     }
 
     #title {
-        margin-top: 0px;
+        margin-top: 0in;
         height: auto;
         border: none;
         box-shadow: none;
@@ -265,22 +270,22 @@ dt {
     #title, #resume-header, #resume-content {
         max-width: 100%;
         width: 100%;
-        margin: 0px;
-        padding: 0px;
+        margin: 0in;
+        padding: 0in;
     }
     
     #social { vertical-align: middle; }
-    #social .icon { font-size: 2em; }
+    #social .icon { font-size: 20pt; }
     #digital-contact .icon { display: none; }
 
     .details { display: none; }
     .no-print { display: none; }
     .work header { 
-        padding: .4em 0px;
-        margin-top: .2em;
-        margin-bottom: .2em;
+        padding: 4pt 0in;
+        margin-top: 2pt;
+        margin-bottom: 2pt;
     }
-    .work .time { top: .71em; }
+    .work .time { top: 7.1pt; }
 }
 
 @viewport {
