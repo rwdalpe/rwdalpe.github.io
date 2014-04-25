@@ -237,57 +237,6 @@ dt {
     }
 }
 
-@media print {
-    @page {
-        size: auto;
-        margin: .25in .5in .25in .5in;
-    }
-    
-    html, body {
-        max-width: 8.5in;
-        margin: 0in;
-        padding: 0in;
-        font-size: 10pt;
-        font-family: "Times New Roman", "DejaVu Serif", serif;
-    }
-
-    h1, h2, h3, dt, .work header {
-        font-family: "Roboto", Helvetica, Arial, "DejaVu Sans", sans-serif;
-    }
-
-    a {
-        color: #000000;
-        text-decoration: none;
-    }
-
-    #title {
-        margin-top: 0in;
-        height: auto;
-        border: none;
-        box-shadow: none;
-    }
-    
-    #title, #resume-header, #resume-content {
-        max-width: 100%;
-        width: 100%;
-        margin: 0in;
-        padding: 0in;
-    }
-    
-    #social { vertical-align: middle; }
-    #social .icon { font-size: 20pt; }
-    #digital-contact .icon { display: none; }
-
-    .details { display: none; }
-    .no-print { display: none; }
-    .work header { 
-        padding: 4pt 0in;
-        margin-top: 2pt;
-        margin-bottom: 2pt;
-    }
-    .work .time { top: 7.1pt; }
-}
-
 @viewport {
     zoom: 1.0;
     width: extend-to-zoom;  

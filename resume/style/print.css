@@ -1,0 +1,118 @@
+@media print {
+    @page {
+        size: auto;
+        margin: .25in .5in .25in .5in;
+    }
+
+    html, body {
+        max-width: 8.5in;
+        margin: 0in;
+        padding: 0in;
+        font-size: 10pt;
+        font-family: "Times New Roman", "DejaVu Serif", serif;
+    }
+
+    h1, h2, h3, dt, .work header {
+        font-family: "Roboto", Helvetica, Arial, "DejaVu Sans", sans-serif;
+    }
+
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    address {
+        float: left;
+    }
+
+    dt { text-align: left; }
+
+    dd { margin-left: 25pt; }
+
+    #digital-contact {
+        float: right;
+    }
+    #digital-contact a {
+        float: right;
+    }
+
+    #social {
+        margin-bottom: 3pt;
+        vertical-align: middle;
+    }
+
+    #title {
+        margin-top: 0in;
+        height: auto;
+        border: none;
+        box-shadow: none;
+    }
+
+    #title, #resume-header, #resume-content {
+        max-width: 100%;
+        width: 100%;
+        margin: 0in;
+        padding: 0in;
+    }
+
+    #social .icon { font-size: 20pt; }
+    #digital-contact .icon { display: none; }
+
+    /** http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+    .contact {
+        /**
+        * For IE 6/7 only
+        * Include this rule to trigger hasLayout and contain floats.
+        */
+        *zoom: 1;
+    }
+
+    /**
+    * For modern browsers
+    * 1. The space content is one way to avoid an Opera bug when the
+    *    contenteditable attribute is included anywhere else in the document.
+    *    Otherwise it causes space to appear at the top and bottom of elements
+    *    that are clearfixed.
+    * 2. The use of `table` rather than `block` is only necessary if using
+    *    `:before` to contain the top-margins of child elements.
+    */
+    .contact:first-of-type:before,
+    .contact:last-of-type:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    .contact:last-of-type:after {
+        clear: both;
+    }
+
+    .details { display: none; }
+
+    .no-print { display: none; }
+
+    .work dl dd {
+        display: list-item;
+        list-style-type: none;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+    .work header { 
+        padding: 4pt 0in;
+        margin-top: 2pt;
+        margin-bottom: 2pt;
+    }
+    .work, .school, .award { position: relative; }
+    .work .time { 
+        position: absolute; 
+        top: 7.1pt;  
+        right: 0in;
+        text-align: right; 
+    }
+    .school .time, .award .time {
+        position: absolute;
+        top: 0in;
+        right: 0in;
+        text-align: right;
+    }
+}
