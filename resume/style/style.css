@@ -10,6 +10,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.1em;
 }
 
 a { color: #2E64FE; }
@@ -29,12 +30,22 @@ dt {
     margin: .31em 0px;
 }
 
+dd {
+}
+
+p {
+    margin-top: .75em;
+    margin-bottom: .75em;
+}
+
 #title {
+    font-size: 2em;
+    font-weight: bold;
     text-align: center;
     margin: 0px;
     padding-top: .5em;
     width: 100%;
-    height: 5em;
+    height: 4em;
 }
 
 #resume-header {
@@ -104,6 +115,7 @@ dt {
     list-style-type: none;
     margin-top: .5em;
     margin-bottom: .5em;
+    margin-left: 2.5em;
 }
 
 .icon {
