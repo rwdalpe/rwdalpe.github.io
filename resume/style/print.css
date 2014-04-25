@@ -9,7 +9,7 @@
         margin: 0in;
         padding: 0in;
         font-size: 10pt;
-        font-family: "Times New Roman", "DejaVu Serif", serif;
+        font-family: Helvetica, Arial, "DejaVu Sans", sans-serif;
         line-height: 10.5pt;
     }
 
@@ -38,8 +38,9 @@
     }
 
     #social {
-        margin-bottom: 3pt;
+        margin-bottom: 0in;
         vertical-align: middle;
+        line-height: 10pt;
     }
 
     #title {
@@ -59,7 +60,10 @@
         padding: 0in;
     }
 
-    #social .icon { font-size: 20pt; }
+    #social .icon { 
+        font-size: 20pt; 
+        line-height: 10pt;
+    }
     #digital-contact .icon { display: none; }
 
     /** http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -96,7 +100,6 @@
     .no-print { display: none; }
 
     .work dl dt { 
-        font-family: "Times New Roman", "DejaVu Serif", serif; 
         font-size: 10pt;
     }
     .work dl dd {

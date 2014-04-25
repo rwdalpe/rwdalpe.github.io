@@ -30,9 +30,6 @@ dt {
     margin: .31em 0px;
 }
 
-dd {
-}
-
 p {
     margin-top: .75em;
     margin-bottom: .75em;
@@ -101,7 +98,7 @@ p {
     box-shadow: 0 0 .15em .03em rgb(132, 132, 132);*/
     border-top: .31em solid #2E64FE;
     /*border-radius: .2em;*/
-    padding: .75em 0 .5em 0;
+    padding: .75em 0 0 0;
 }
 .work .position { font-weight: bold; }
 /*.work dl { margin-left: 2.5em; }*/
