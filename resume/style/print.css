@@ -10,9 +10,10 @@
         padding: 0in;
         font-size: 10pt;
         font-family: "Times New Roman", "DejaVu Serif", serif;
+        line-height: 10.5pt;
     }
 
-    h1, h2, h3, dt, .work header {
+    h1, h2, h3, dt {
         font-family: "Roboto", Helvetica, Arial, "DejaVu Sans", sans-serif;
     }
 
@@ -46,6 +47,9 @@
         height: auto;
         border: none;
         box-shadow: none;
+        font-size: 20pt;
+        line-height: 20pt;
+        height: 25pt;
     }
 
     #title, #resume-header, #resume-content {
@@ -91,6 +95,10 @@
 
     .no-print { display: none; }
 
+    .work dl dt { 
+        font-family: "Times New Roman", "DejaVu Serif", serif; 
+        font-size: 10pt;
+    }
     .work dl dd {
         display: list-item;
         list-style-type: none;
