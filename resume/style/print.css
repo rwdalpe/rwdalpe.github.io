@@ -28,7 +28,11 @@
 
     dt { text-align: left; }
 
-    dd { margin-left: 25pt; }
+    dd { 
+        margin-left: 25pt; 
+    }
+    
+    .skill, .award { margin-bottom: 3pt; }
 
     #digital-contact {
         float: right;
@@ -105,8 +109,8 @@
     .work dl dd {
         display: list-item;
         list-style-type: none;
-        margin-top: .5em;
-        margin-bottom: .5em;
+        margin-top: 3pt;
+        margin-bottom: 3pt;
     }
     .work header { 
         padding: 4pt 0in;
