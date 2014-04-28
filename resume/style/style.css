@@ -15,7 +15,7 @@ body {
 
 a { color: #2E64FE; }
 
-dl {
+dl, ul {
     margin-top: 0px;
     padding-top: 0px;
 }
@@ -82,6 +82,7 @@ p {
 }
 #social ul li {
     display: inline-block;
+    list-style-type: none;
 }
 
 .position, .degree { display: block; }
@@ -102,14 +103,9 @@ p {
 }
 .work .position { font-weight: bold; }
 /*.work dl { margin-left: 2.5em; }*/
-.work dl dt {
-    text-align: left;
-    font-weight: normal;
-    font-size: 1em;
-}
-.work dl dd {
+.work li {
     display: list-item;
-    list-style-type: none;
+    list-style-type: disc;
     margin-top: .5em;
     margin-bottom: .5em;
     margin-left: 2.5em;
@@ -130,7 +126,7 @@ p {
 
     dl { margin-left: 0px; }
     dt { text-align: center; }
-    dd {
+    dd, li {
         margin: 0px;
         padding: 0px;
     }
@@ -159,7 +155,7 @@ p {
 
     .work dl { margin-left: 0px; }
     .work dt { text-align: left; }
-    .work dd { margin-left: 2.5em; }
+    .work dd, .work li { margin-left: 2.5em; }
 }
 
 @media all and (min-width: 40em) {
