@@ -40,6 +40,21 @@ p {
     height: 5em;
 }
 
+#print-controls {
+    position: fixed;
+    font-size: .8em;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    clear: both;
+    padding: .2em 0em .2em 0em;
+}
+#print-controls a {
+    display: inline-block;
+    margin-right: .2em;
+}
+
 #resume-header {
     max-width: 45em;
     margin: -5em auto 0px auto;
@@ -87,10 +102,7 @@ p {
 .work { margin-left: 0px; }
 .work header {
     margin-top: .5em;
-/*    background-color: #bdbdbd;
-    box-shadow: 0 0 .15em .03em rgb(132, 132, 132);*/
-    border-top: .31em solid #2E64FE;
-    /*border-radius: .2em;*/
+    border-top: .31em solid #2E64FE;    
     padding: .5em 0 0 0;
 }
 .work .position { font-weight: bold; }
@@ -118,6 +130,8 @@ p {
 
     dt { text-align: center; }
 
+    #print-controls { display: none; }
+    
     #title {
         height: auto;
         padding: .1em 0px .1em 0px;

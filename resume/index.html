@@ -7,6 +7,25 @@
         <link rel="stylesheet" href="style/style.css"/>
         <link rel="stylesheet" href="style/print.css"/>
         <link rel="stylesheet" href="style/ionicons.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#print-full-link").on('click', onFullPagePrint);
+                $("#print-pg-link").on('click', onOnePagePrint);
+            });
+            
+            function onOnePagePrint(e) {
+                e.preventDefault();
+                $(".optional-print").addClass("no-print");
+                window.print();
+            }
+            
+            function onFullPagePrint(e) {
+                e.preventDefault();
+                $(".optional-print").removeClass("no-print");
+                window.print();
+            }
+        </script>
     </head>
     <body>
         <h1 id="title">Robert Winslow Dalpe</h1>
@@ -130,7 +149,7 @@
                         </ul>
                     </section>
                 </dd>
-                <dd class="work no-print">
+                <dd class="work optional-print no-print">
                     <header>
                         <span class="position">Software Engineering Intern</span>
                         <span class="org">
@@ -181,7 +200,7 @@
                 <dd class="award">
                     <span class="name">Director's Cut Award</span>
                     <span class="time">January 2014</span>
-                    <p class="details no-print">
+                    <p class="details optional-print no-print">
                         This award is given to Blackbaud employees who
                         present superior performance relating to corporate 
                         initiatives, innovation, individual and team goals. 
@@ -190,7 +209,7 @@
                 <dd class="award">
                     <span class="name">Off the Grid 2nd Place Finalist</span>
                     <span class="time">July 2013</span>
-                    <p class="details no-print">
+                    <p class="details optional-print no-print">
                         Off the Grid is a Blackbaud internal competition where 
                         teams of up to 4 are given 24 hours to work on any project 
                         that they think would bring value to Blackbaud or its 
@@ -198,7 +217,7 @@
                         for judging. 5-7 projects make it to the final round 
                         where they are presented to the entire Products division and voted on.
                     </p>
-                    <p class="details no-print">
+                    <p class="details optional-print no-print">
                         My project was a solo project for a prototype system 
                         that demonstrated real-time communication between Blackbaud 
                         web products and browser clients using WebSockets.
@@ -207,19 +226,19 @@
                 <dd class="award">
                     <span class="name">Graduated Valedictorian Summa Cum Laude</span>
                     <span class="time">2013</span>
-                    <p class="details no-print">
+                    <p class="details optional-print no-print">
                         Graduated top of my class with a 4.0 GPA.
                     </p>
                 </dd>
                 <dd class="award">
                     <span class="name">Triangle Technology Executive Council (TTEC) Scholarship</span>
                     <span class="time">2010</span>
-                    <p class="details no-print">
+                    <p class="details optional-print no-print">
                         A scholarship awarded to two students who demonstrated 
                         excellence and enthusiasm for the field throughout their 
                         most recent internship.
                     </p>
-                    <p class="details no-print">
+                    <p class="details optional-print no-print">
                         TTEC is a council of executives from various companies 
                         in the Research Triangle area. 
                     </p>
@@ -234,6 +253,10 @@
             <ul>
                 <li><span class="icon icon-social-linkedin"></span><a href="http://www.linkedin.com/in/rwdalpe">rwdalpe</a></li>
             </ul>
+        </aside>
+        <aside id="print-controls" class="no-print">
+            <a href="#" id="print-pg-link">Print One Page Version</a>
+            <a href="#" id="print-full-link">Print Full Version</a>
         </aside>
     </body>
 </html>
