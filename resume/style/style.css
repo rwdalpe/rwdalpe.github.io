@@ -15,11 +15,6 @@ body {
 
 a { color: #2E64FE; }
 
-dl, ul {
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
 h1, dt {
     font-family: "Roboto", Helvetica, Arial, "DejaVu Sans", sans-serif;
 }
@@ -57,9 +52,6 @@ p {
     padding: 0em 3em 1.5em 3em;
 }
 
-#resume-content > dl {
-    margin-top: 0em;
-}
 #resume-content > dl > dt {
     margin-top: .7em;
 }
@@ -99,7 +91,7 @@ p {
     box-shadow: 0 0 .15em .03em rgb(132, 132, 132);*/
     border-top: .31em solid #2E64FE;
     /*border-radius: .2em;*/
-    padding: .75em 0 0 0;
+    padding: .5em 0 0 0;
 }
 .work .position { font-weight: bold; }
 /*.work dl { margin-left: 2.5em; }*/
@@ -124,12 +116,7 @@ p {
         text-align: left;
     }
 
-    dl { margin-left: 0px; }
     dt { text-align: center; }
-    dd, li {
-        margin: 0px;
-        padding: 0px;
-    }
 
     #title {
         height: auto;
@@ -153,9 +140,7 @@ p {
     
     .time { display: block; }
 
-    .work dl { margin-left: 0px; }
-    .work dt { text-align: left; }
-    .work dd, .work li { margin-left: 2.5em; }
+    .work li { margin-left: 2.5em; }
 }
 
 @media all and (min-width: 40em) {
@@ -206,7 +191,7 @@ p {
     .work, .school, .award { position: relative; }
     .work .time { 
         position: absolute; 
-        top: 1.06em;  
+        top: .78em;  
         right: 0px;
         text-align: right; 
     }
