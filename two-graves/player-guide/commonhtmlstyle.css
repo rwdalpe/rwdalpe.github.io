@@ -1,0 +1,96 @@
+/* http://paletton.com/#uid=53N0u0ktr+BhxZWnD+tHU+8XULF */
+@import url(https://fonts.googleapis.com/css?family=Trade+Winds|Bubblegum+Sans|Cinzel+Decorative:400,700,900|Forum|Maiden+Orange|Averia+Serif+Libre:400,700|New+Rocker|Metal+Mania);
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+header>h1, header>h2, header>h3, header>h4, header>h5, header>h6 {
+  font-family: 'Averia Serif Libre', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0em;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2.08em;
+}
+h3 {
+  font-size: 1.73em;
+}
+h4 {
+  font-size: 1.44em;
+}
+h5 {
+  font-size: 1.2em;
+}
+div.authorgroup {
+  font-size: .8em;
+}
+.author h3 {
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 0px;
+}
+div.legalnotice {
+  font-size: .8em;
+}
+p.pubdate {
+  font-size: .8em;
+}
+div.toc>ul.toc {
+  font-size: .8em;
+  padding-right: .2em;
+}
+div.toc ul.toc {
+  list-style-type: none;
+  padding-left: 1.2em;
+}
+div.sidebar {
+  padding: .25em;
+  border: 1px solid #000000;
+  background: #cccccc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.sidebar header h4 {
+  margin-top: 0px;
+}
+div.sidebar p:last-child {
+  margin-bottom: 0px;
+}
+div.mediaobject object {
+  width: 100%;
+}
+a {
+  color: #2E64FE;
+}
+a:visited {
+  color: #652EFE;
+}
+p {
+  line-height: 1.2em;
+}
+@viewport {
+  zoom: 1.0;
+  width: device-width;
+  initial-scale: 1;
+}
+
+@-viewport {
+  zoom: 1.0;
+  width: device-width;
+  initial-scale: 1;
+}
+
+@-ms-viewport {
+  zoom: 1.0;
+  width: device-width;
+  initial-scale: 1;
+}
