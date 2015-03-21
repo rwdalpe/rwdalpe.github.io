@@ -94,7 +94,7 @@
     top: 25%;
     transform: translateY(-50%);
   }
-  article.book>header>.legalnotice {
+  article.book>header>.bottom-matter {
     position: absolute;
     bottom: 0;
   }
