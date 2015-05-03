@@ -149,7 +149,7 @@
             }
 
             // accessibility for links
-            item.children('a').attr('role', 'menuitem').click(function(event){
+            item.children('span').children('a').off('click').click(function(event){
                 //Ensure that it's not a parent
                 if (settings.closeOnClick() && !$(event.target).parent().closest('li').hasClass(prefix+'_parent')) {
                         //Emulate menu close if set

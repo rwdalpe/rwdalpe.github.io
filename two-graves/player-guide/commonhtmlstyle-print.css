@@ -21,15 +21,15 @@
     padding-left: .5in;
     @top-left-corner {
       content: "";
-      background: #5784FE;
+      background: #3D4F7E;
     }
     @left-middle {
       content: "";
-      background: #5784FE;
+      background: #3D4F7E;
     }
     @bottom-left-corner {
       content: "";
-      background: #5784FE;
+      background: #3D4F7E;
     }
     @bottom-left {
       content: counter(page);
@@ -41,15 +41,15 @@
     padding-right: .5in;
     @top-right-corner {
       content: "";
-      background: #5784FE;
+      background: #3D4F7E;
     }
     @right-middle {
       content: "";
-      background: #5784FE;
+      background: #3D4F7E;
     }
     @bottom-right-corner {
       content: "";
-      background: #5784FE;
+      background: #3D4F7E;
     }
     
     @bottom-right {
@@ -69,7 +69,7 @@
   html {
     margin: 0px;
     padding: 0px;
-    font-family: "Times New Roman", "Liberation Serif", serif;
+    font-family: "Garamond", "Palladio URW", "Times New Roman", "Liberation Serif", serif;
     font-size: 10pt;
   }
   body {
@@ -101,6 +101,11 @@
   article.book>hr {
     display: none;
   }
+
+  /* 
+   * If floated things collide with a header, 
+   * we want to make sure the header clears
+   */  
   header {
     clear: both;
   }
@@ -121,50 +126,57 @@
   article.chapter>header>h2 {
     font-size: 3em;
   }
+  section.section>header {
+    margin-top: 1em;
+  }
   h1, h2, h3, h4, h5, h6 {
     margin: 0px;
     padding: 0px;
     bookmark-level: none;
   }
-  p:first-of-type {
-    text-indent: 0px;
-  }
-  div.variablelist + p:first-of-type {
-    text-indent: 2em;
-    margin-top: 0px;
-  }
-  div.variablelist:last-of-type {
-    margin-bottom: 1em;
-  }
-  p + div.variablelist:last-of-type {
-    margin-bottom: 0px;
-  }
+
   p {
-    text-align: justify;
     margin: 0px;
     text-indent: 2em;
+    text-align: justify;
+    line-height: 1.2em;
   }
-  article.chapter>p:last-of-type, section>p:last-of-type {
-    margin-bottom: 1em;
+  /*
+   * we specifically call out div.sidebar here
+   * because its other rules defined for top margins
+   * might be more specific, but we want this one to
+   * apply
+   */
+  header+*, header+div.toc+*, header+div.sidebar {
+    text-indent: 0px;
+    margin-top: .25em;
   }
-  div.itemizedlist:last-of-type+p {
-    margin-top: -.5em;
+  /* 
+   * sidebars are a little weirder.
+   * hopefully they just contain a p tag at their root
+   * otherwise this will get more complicated, maybe
+   */
+  div.sidebar-content > *:first-child {
+    text-indent: 0px;
   }
+  div.sidebar {
+    padding-top: .1em;
+    padding-bottom: .1em;
+    border-left: 1em solid #7A9EFE;
+  }
+
   ul {
     margin: .5em 0px;
     padding: 0px 0px 0px 1em;
   }
-  div.itemizedlist:last-of-type {
-    margin-bottom: 1em;
-  }
-  p:last-of-type+div.itemizedlist {
-    margin-top: -.5em;
-  }
   li {
     text-align: justify;
   }
+
   dl {
     clear: both;
+    margin: 0px;
+    padding: 0px;
   }
   dt {
     clear: left;
@@ -182,9 +194,11 @@
   dd {
     margin: 0px;
   }
-  section.section > p:first-of-type, section.section > div.variablelist:first-of-type {
-    margin-top: .25em;
+  dd p {
+    text-indent: 0px;
   }
+  
+  
   div.toc {
     display: none;
   }

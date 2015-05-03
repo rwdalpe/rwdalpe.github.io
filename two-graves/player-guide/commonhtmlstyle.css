@@ -1,8 +1,8 @@
 /* http://paletton.com/#uid=53N0u0ktr+BhxZWnD+tHU+8XULF */
-@import url(https://fonts.googleapis.com/css?family=Trade+Winds|Bubblegum+Sans|Cinzel+Decorative:400,700,900|Forum|Maiden+Orange|Averia+Serif+Libre:400,700|New+Rocker|Metal+Mania);
+@import url(https://fonts.googleapis.com/css?family=Trade+Winds|Bubblegum+Sans|Cinzel+Decorative:400,700,900|Forum|Maiden+Orange|Averia+Serif+Libre:400,700|New+Rocker|Metal+Mania|Roboto+Condensed:400,700);
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", "Georgia", serif;
   font-size: 1em;
 }
 body {
@@ -10,9 +10,9 @@ body {
   padding: 0px;
 }
 header>h1, header>h2, header>h3, header>h4, header>h5, header>h6 {
-  font-family: 'Averia Serif Libre', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 0em;
 }
 h1 {
@@ -34,15 +34,17 @@ div.authorgroup {
   font-size: .8em;
 }
 .author h3 {
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1em;
   margin-bottom: 0px;
 }
-div.legalnotice {
+div.bottom-matter {
   font-size: .8em;
+  line-height: 1.2em;
 }
-p.pubdate {
-  font-size: .8em;
+div.bottom-matter p {
+    line-height: 1.2em;
 }
 div.toc>ul.toc {
   font-size: .8em;
@@ -53,9 +55,8 @@ div.toc ul.toc {
   padding-left: 1.2em;
 }
 div.sidebar {
-  padding: .25em;
-  border: 1px solid #000000;
-  background: #cccccc;
+  padding: 1em 1em;
+  border-left: 1.5em solid #7A9EFE;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -72,10 +73,10 @@ a {
   color: #2E64FE;
 }
 a:visited {
-  color: #652EFE;
+  color: #5C21FF;
 }
 p {
-  line-height: 1.2em;
+  line-height: 1.6em;
 }
 @viewport {
   zoom: 1.0;
