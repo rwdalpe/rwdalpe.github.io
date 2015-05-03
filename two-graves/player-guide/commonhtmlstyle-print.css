@@ -163,6 +163,7 @@
     padding-top: .1em;
     padding-bottom: .1em;
     border-left: 1em solid #7A9EFE;
+    page-break-inside: avoid;
   }
 
   ul {
