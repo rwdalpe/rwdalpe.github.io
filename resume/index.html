@@ -1,327 +1,339 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="initial-scale=1">
-        <title>Robert Winslow Dalpe</title>
-        <link rel="stylesheet" href="style/reset.css"/>
-        <link rel="stylesheet" href="style/style.css"/>
-        <link rel="stylesheet" href="style/print.css"/>
-        <link rel="stylesheet" href="style/ionicons.css"/>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $("#print-full-link").on('click', onFullPagePrint);
-                $("#print-pg-link").on('click', onOnePagePrint);
-            });
-            
-            function onOnePagePrint(e) {
-                e.preventDefault();
-                $(".optional-print").addClass("no-print");
-                window.print();
-            }
-            
-            function onFullPagePrint(e) {
-                e.preventDefault();
-                $(".optional-print").removeClass("no-print");
-                window.print();
-            }
-        </script>
-    </head>
-    <body>
-        <h1 id="title">Robert Winslow Dalpe</h1>
-        <header id="resume-header">
-            <section class="contact">
-                <address>
-                    Kirkland, WA
-                </address>
-            </section>
-            <section class="contact">
-                <ul id="digital-contact">
-                    <li><span class="icon icon-email"></span><a href="mailto:rwdalpe@gmail.com">rwdalpe@gmail.com</a></li>
-                    <li><span class="icon icon-ios7-telephone"></span><a href="tel:1+919-480-3512">919-480-3512</a></li>
-                </ul>
-            </section>
-        </header>
-        <section id="resume-content">
-            <dl>
-                <dt>Work Experience</dt>
-                <dd class="work">
-                    <header>
-                        <span class="position">Software Developer</span>
-                        <span class="org">
-                            <span class="name"><a href="https://www.paizo.com/">Paizo</a></span>, <span class="location">Redmond, WA</span>
-                        </span>
-                        <span class="time">September 2014 - Present</span>
-                    </header>
-                    <section>
-                        <ul>
-                            <li>
-                                Designed and implemented a data access layer with
-                                change auditing and support for synchronizing 
-                                disconnected object graphs using Entity Framework 6.
-                            </li>
-                            <li>
-                                Designed and implemented WCF services for critical
-                                business infrastructure including forums, content management,
-                                and user management.
-                            </li>
-                            <li>
-                                Configured and managed multiple
-                                MariaDB Galera clusters, including automated node
-                                deployment and scheduled backups. 
-                            </li>
-                            <li>
-                                Developed suites of unit, integration, and
-                                performance tests to enhance quality and verify
-                                system stability.
-                            </li>
-                            <li>
-                                Implemented automated, no-downtime deployments and configuration management for
-                                multiple types of instances in EC2 using Puppet and MCollective.
-                            </li>
-                            <li>
-                                Integrated Apache Solr indexing and searching and
-                                designed multiple Solr schemas.
-                            </li>
-                            <li>
-                                Managed other Amazon Web Services
-                                resources including SQS, S3, CloudFront.
-                            </li>
-                        </ul>
-                    </section>
-                </dd>
-                <dd class="work">
-                    <header>
-                        <span class="position">Software Engineer II</span>
-                        <span class="org">
-                            <span class="name"><a href="https://www.blackbaud.com/">Blackbaud</a></span>, <span class="location">Charleston, SC</span>
-                        </span>
-                        <span class="time">February 2014 - September 2014</span>
-                    </header>
-                    <section>
-                        <ul>
-                            <li>
-                                Took on a larger engineering role within my team
-                                after proving my abilities during my time as a
-                                Software Engineer I.
-                            </li>
-                            <li>
-                                Pursued a goal to create a stronger developer ecosystem for 
-                                internal and external developers using our APIs. 
-                            </li>
-                            <li>
-                                Researched and designed an API facade 
-                                layer made to bypass the complexity 
-                                and ongoing change of our 
-                                internal services. Usable by internal and
-                                external developers.
-                            </li>
-                            <li>
-                                Mentored interns and led them 
-                                on a project to improve application ticketing performance.
-                            </li>
-                            <li>
-                                Began attending product leadership team
-                                meetings to increase my awareness of the current
-                                business status of my product.
-                            </li>
-                            <li>
-                                Took notes during product leadership team meetings
-                                and conveyed important information to the rest of
-                                the engineering team.
-                            </li>
-                        </ul>
-                    </section>
-                </dd>
-                <dd class="work">
-                    <header>
-                        <span class="position">Software Engineer I</span>
-                        <span class="org">
-                            <span class="name"><a href="https://www.blackbaud.com/">Blackbaud</a></span>, <span class="location">Charleston, SC</span>
-                        </span>
-                        <span class="time">June 2013 - January 2014</span>
-                    </header>
-                    <section>
-                        <ul>
-                            <li>
-                                Worked as part of a Scrum team to develop a web-based
-                                <a href="https://www.blackbaud.com/ticketing/altru-ticketing-software">solution</a> 
-                                for constituent relationship management, sales, 
-                                event scheduling, and financial reporting using .NET technologies
-                                and MS SQL Server.
-                            </li>
-                            <li>
-                                Researched, designed, and implemented a pub-sub system for real-time, 
-                                data-driven notifications
-                                using WebSockets. Designed
-                                for pushing data from Blackbaud products to browser
-                                or mobile clients.
-                            </li>
-                            <li>
-                                Worked with supporting teams to debug 
-                                and resolve customer issues in live production 
-                                environments.
-                            </li>
-                            <li>
-                                Acted as lead technical consultant for a 3rd party
-                                company that wanted to integrate
-                                with our system.
-                            </li>
-                        </ul>
-                    </section>
-                </dd>
-                <dd class="work optional-print no-print">
-                    <header>
-                        <span class="position">Software Engineering Intern</span>
-                        <span class="org">
-                            <span class="name"><a href="http://www.motorolasolutions.com">Motorola Solutions</a></span>, <span class="location">Akron, OH</span>
-                        </span>
-                        <span class="time">May-August 2012</span>
-                    </header>
-                    <section>
-                        <ul>
-                            <li>
-                                Gained experience as a member of an Agile product design team, 
-                                including integration of new systems and existing products.
-                            </li>
-                            <li>
-                                Created a documented iOS framework to allow client applications 
-                                to interact with a new product's Web Service API.
-                            </li>
-                            <li>
-                                Increased my understanding of the interactions 
-                                between different business units within a company and how 
-                                best to facilitate good interactions.
-                            </li>
-                        </ul>
-                    </section>
-                </dd>
-                <dd class="work optional-print no-print">
-                    <header>
-                        <span class="position">Software Engineering Intern</span>
-                        <span class="org">
-                            <span class="name"><a href="http://www.motorolasolutions.com">Motorola</a></span>, <span class="location">Akron, OH</span>
-                        </span>
-                        <span class="time">May-August 2010</span>
-                    </header>
-                    <section>
-                        <ul>
-                            <li>
-                                Gained experience with an Agile software development lifecycle, 
-                                from planning to design, implementation, testing, and feedback.
-                            </li>
-                            <li>
-                                Created a C# web application designed to parse log files
-                                in order to diagnose and report errors. 
-                                This tool was designed for and actively used
-                                by Motorola Solution's MSP support team for several years.
-                            </li>
-                            <li>
-                                Functioned as an active member of Motorola's 
-                                engineering support team and
-                                gained experience working with support 
-                                technicians to solve customer's problems.
-                            </li>
-                        </ul>
-                    </section>
-                </dd>
-                <dt>Skills</dt>
-                <dd class="skill">
-                    Skilled public speaker
-                </dd>
-                <dd class="skill">
-                    Languages: C#, Java, Javascript, SQL, Python, XSLT 1.0 & 2.0, VB.NET
-                </dd>
-                <dd class="skill">
-                    Experienced with Windows and Linux based operating systems
-                </dd>
-                <dt>Education</dt>
-                <dd class="school">
-                    <span class="degree">B.S. Computer Science</span>
-                    <span class="degree">Minors in Cognitive Science & Mathematics</span>
-                    <span class="time">May 2013</span>
-                    North Carolina State University, Raleigh, NC<br/>
-                    GPA: 4.0
-                </dd>
-                <dt>Honors & Awards</dt>
-                <dd class="award">
-                    <span class="name">Appcelerator Titanium Certified Expert</span>
-                    <span class="time">June 2014</span>
-                    <p class="details optional-print no-print">
-                        Appcelerator TCE recognizes developers who can create "best of breed"
-                        apps using a wide range of cross-platform and 
-                        platform-specific device APIs.
-                    </p>
-                </dd>
-                <dd class="award">
-                    <span class="name">Appcelerator Titanium Certified Developer</span>
-                    <span class="time">June 2014</span>
-                    <p class="details optional-print no-print">
-                        Appcelerator TCD recognizes developers who can develop and publish 
-                        cross-platform apps using core Titanium APIs, Alloy, 
-                        and Appcelerator Cloud Services.
-                    </p>
-                </dd>
-                <dd class="award">
-                    <span class="name">Director's Cut Award</span>
-                    <span class="time">January 2014</span>
-                    <p class="details optional-print no-print">
-                        This award is given to Blackbaud employees who
-                        present superior performance relating to corporate 
-                        initiatives, innovation, individual and team goals. 
-                    </p>
-                </dd>
-                <dd class="award">
-                    <span class="name">Off the Grid 2nd Place Finalist</span>
-                    <span class="time">July 2013</span>
-                    <p class="details optional-print no-print">
-                        Off the Grid is a Blackbaud internal competition where 
-                        teams of up to 4 are given 24 hours to work on any project 
-                        that they think would bring value to Blackbaud or its 
-                        customers. After 24 hours, the teams present their projects 
-                        for judging. 5-7 projects make it to the final round 
-                        where they are presented to the entire Products division and voted on.
-                    </p>
-                    <p class="details optional-print no-print">
-                        My project was a solo project for a prototype system 
-                        that demonstrated real-time communication between Blackbaud 
-                        web products and browser clients using WebSockets.
-                    </p>
-                </dd>
-                <dd class="award">
-                    <span class="name">Graduated Valedictorian Summa Cum Laude</span>
-                    <span class="time">2013</span>
-                    <p class="details optional-print no-print">
-                        Graduated top of my class with a 4.0 GPA.
-                    </p>
-                </dd>
-                <dd class="award">
-                    <span class="name">Triangle Technology Executive Council (TTEC) Scholarship</span>
-                    <span class="time">2010</span>
-                    <p class="details optional-print no-print">
-                        A scholarship awarded to two students who demonstrated 
-                        excellence and enthusiasm for the field throughout their 
-                        most recent internship.
-                    </p>
-                    <p class="details optional-print no-print">
-                        TTEC is a council of executives from various companies 
-                        in the Research Triangle area. 
-                    </p>
-                </dd>
-                <dd class="award">
-                    <span class="name">University Honors Program</span>
-                    <span class="time">2009-2013</span>
-                </dd>
-            </dl>
-        </section>
-        <aside id="social" class="no-print">
-            <ul>
-                <li><span class="icon icon-social-linkedin"></span><a href="http://www.linkedin.com/in/rwdalpe">rwdalpe</a></li>
-            </ul>
-        </aside>
-        <aside id="print-controls" class="no-print">
-            <a href="#" id="print-pg-link">Print One Page Version</a>
-            <a href="#" id="print-full-link">Print Full Version</a>
-        </aside>
-    </body>
+		<head>
+				<meta name="viewport" content="initial-scale=1">
+				<title>Robert Winslow Dalpe</title>
+				<link rel="stylesheet" href="style/reset.css"/>
+				<link rel="stylesheet" href="style/style.css"/>
+				<link rel="stylesheet" href="style/print.css"/>
+				<link rel="stylesheet" href="style/ionicons.css"/>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+				<script type="text/javascript">
+						$(document).ready(function() {
+								$("#print-full-link").on('click', onFullPagePrint);
+								$("#print-pg-link").on('click', onOnePagePrint);
+						});
+						
+						function onOnePagePrint(e) {
+								e.preventDefault();
+								$(".optional-print").addClass("no-print");
+								window.print();
+						}
+						
+						function onFullPagePrint(e) {
+								e.preventDefault();
+								$(".optional-print").removeClass("no-print");
+								window.print();
+						}
+				</script>
+		</head>
+		<body>
+				<h1 id="title">Robert Winslow Dalpe</h1>
+				<header id="resume-header">
+						<section class="contact">
+								<address>
+										Kirkland, WA
+								</address>
+						</section>
+						<section class="contact">
+								<ul id="digital-contact">
+										<li><span class="icon icon-email"></span><a href="mailto:rwdalpe@gmail.com">rwdalpe@gmail.com</a></li>
+										<li><span class="icon icon-ios7-telephone"></span><a href="tel:1+919-480-3512">919-480-3512</a></li>
+								</ul>
+						</section>
+				</header>
+				<section id="resume-content">
+						<dl>
+								<dt>Work Experience</dt>
+								<dd class="work">
+									<header>
+											<span class="position">Software Engineer</span>
+											<span class="org">
+													<span class="name"><a href="https://www.apexlearning.com/">Apex Learning</a></span>, <span class="location">Seattle, WA</span>
+											</span>
+											<span class="time">November 2015 - Present</span>
+									</header>
+									<section>
+											<ul/>
+									</section>
+								</dd>
+								<dd class="work">
+										<header>
+												<span class="position">Software Developer</span>
+												<span class="org">
+														<span class="name"><a href="https://www.paizo.com/">Paizo</a></span>, <span class="location">Redmond, WA</span>
+												</span>
+												<span class="time">September 2014 - November 2015</span>
+										</header>
+										<section>
+												<ul>
+														<li>
+																Designed and implemented distributed WCF services for critical
+																business infrastructure including forums, content management,
+																and user management.
+														</li>
+														<li>
+																Designed and implemented a data access layer with
+																change auditing and support for synchronizing 
+																disconnected object graphs using Entity Framework 6.
+														</li>
+														<li>
+																Configured and managed multiple
+																MariaDB Galera clusters, including automated node
+																deployment and scheduled backups. 
+														</li>
+														<li>
+																Developed suites of unit, integration, and
+																performance tests to enhance quality and verify
+																system stability.
+														</li>
+														<li>
+																Implemented automated, no-downtime deployments and configuration management for
+																multiple types of instances in EC2 using Puppet and MCollective.
+														</li>
+														<li>
+																Integrated Apache Solr indexing and searching and
+																designed multiple Solr schemas.
+														</li>
+														<li>
+																Managed other Amazon Web Services
+																resources including SQS, S3, and CloudFront.
+														</li>
+												</ul>
+										</section>
+								</dd>
+								<dd class="work">
+										<header>
+												<span class="position">Software Engineer II</span>
+												<span class="org">
+														<span class="name"><a href="https://www.blackbaud.com/">Blackbaud</a></span>, <span class="location">Charleston, SC</span>
+												</span>
+												<span class="time">February 2014 - September 2014</span>
+										</header>
+										<section>
+												<ul>
+														<li>
+																Took on a larger engineering role within my team
+																after proving my abilities during my time as a
+																Software Engineer I.
+														</li>
+														<li>
+																Pursued a goal to create a stronger developer ecosystem for 
+																internal and external developers using our APIs. 
+														</li>
+														<li>
+																Researched and designed an API facade 
+																layer made to bypass the complexity 
+																and ongoing change of our 
+																internal services. Usable by internal and
+																external developers.
+														</li>
+														<li>
+																Mentored interns and led them 
+																on a project to improve application ticketing performance.
+														</li>
+														<li>
+																Began attending product leadership team
+																meetings to increase my awareness of the current
+																business status of my product.
+														</li>
+														<li>
+																Took notes during product leadership team meetings
+																and conveyed important information to the rest of
+																the engineering team.
+														</li>
+												</ul>
+										</section>
+								</dd>
+								<dd class="work">
+										<header>
+												<span class="position">Software Engineer I</span>
+												<span class="org">
+														<span class="name"><a href="https://www.blackbaud.com/">Blackbaud</a></span>, <span class="location">Charleston, SC</span>
+												</span>
+												<span class="time">June 2013 - January 2014</span>
+										</header>
+										<section>
+												<ul>
+														<li>
+																Worked as part of a Scrum team to develop a web-based
+																<a href="https://www.blackbaud.com/ticketing/altru-ticketing-software">solution</a> 
+																for constituent relationship management, sales, 
+																event scheduling, and financial reporting using .NET technologies
+																and MS SQL Server.
+														</li>
+														<li>
+																Researched, designed, and implemented a pub-sub system for real-time, 
+																data-driven notifications
+																using WebSockets. Designed
+																for pushing data from Blackbaud products to browser
+																or mobile clients.
+														</li>
+														<li>
+																Worked with supporting teams to debug 
+																and resolve customer issues in live production 
+																environments.
+														</li>
+														<li>
+																Acted as lead technical consultant for a 3rd party
+																company that wanted to integrate
+																with our system.
+														</li>
+												</ul>
+										</section>
+								</dd>
+								<dd class="work optional-print no-print">
+										<header>
+												<span class="position">Software Engineering Intern</span>
+												<span class="org">
+														<span class="name"><a href="http://www.motorolasolutions.com">Motorola Solutions</a></span>, <span class="location">Akron, OH</span>
+												</span>
+												<span class="time">May-August 2012</span>
+										</header>
+										<section>
+												<ul>
+														<li>
+																Gained experience as a member of an Agile product design team, 
+																including integration of new systems and existing products.
+														</li>
+														<li>
+																Created a documented iOS framework to allow client applications 
+																to interact with a new product's Web Service API.
+														</li>
+														<li>
+																Increased my understanding of the interactions 
+																between different business units within a company and how 
+																best to facilitate good interactions.
+														</li>
+												</ul>
+										</section>
+								</dd>
+								<dd class="work optional-print no-print">
+										<header>
+												<span class="position">Software Engineering Intern</span>
+												<span class="org">
+														<span class="name"><a href="http://www.motorolasolutions.com">Motorola</a></span>, <span class="location">Akron, OH</span>
+												</span>
+												<span class="time">May-August 2010</span>
+										</header>
+										<section>
+												<ul>
+														<li>
+																Gained experience with an Agile software development life cycle, 
+																from planning to design, implementation, testing, and feedback.
+														</li>
+														<li>
+																Created a C# web application designed to parse log files
+																in order to diagnose and report errors. 
+																This tool was designed for and actively used
+																by Motorola Solution's MSP support team for several years.
+														</li>
+														<li>
+																Functioned as an active member of Motorola's 
+																engineering support team and
+																gained experience working with support 
+																technicians to solve customer's problems.
+														</li>
+												</ul>
+										</section>
+								</dd>
+								<dt>Skills</dt>
+								<dd class="skill">
+										Skilled public speaker
+								</dd>
+								<dd class="skill">
+										Languages: C#, Java, Javascript, SQL, Python, XSLT 1.0 & 2.0, VB.NET
+								</dd>
+								<dd class="skill">
+										Experienced with Windows and Linux based operating systems
+								</dd>
+								<dt>Education</dt>
+								<dd class="school">
+										<span class="degree">B.S. Computer Science</span>
+										<span class="degree">Minors in Cognitive Science & Mathematics</span>
+										<span class="time">May 2013</span>
+										North Carolina State University, Raleigh, NC<br/>
+										GPA: 4.0
+								</dd>
+								<dt>Honors & Awards</dt>
+								<dd class="award">
+										<span class="name">Appcelerator Titanium Certified Expert</span>
+										<span class="time">June 2014</span>
+										<p class="details optional-print no-print">
+												Appcelerator TCE recognizes developers who can create "best of breed"
+												apps using a wide range of cross-platform and 
+												platform-specific device APIs.
+										</p>
+								</dd>
+								<dd class="award">
+										<span class="name">Appcelerator Titanium Certified Developer</span>
+										<span class="time">June 2014</span>
+										<p class="details optional-print no-print">
+												Appcelerator TCD recognizes developers who can develop and publish 
+												cross-platform apps using core Titanium APIs, Alloy, 
+												and Appcelerator Cloud Services.
+										</p>
+								</dd>
+								<dd class="award">
+										<span class="name">Director's Cut Award</span>
+										<span class="time">January 2014</span>
+										<p class="details optional-print no-print">
+												This award is given to Blackbaud employees who
+												present superior performance relating to corporate 
+												initiatives, innovation, individual and team goals. 
+										</p>
+								</dd>
+								<dd class="award">
+										<span class="name">Off the Grid 2nd Place Finalist</span>
+										<span class="time">July 2013</span>
+										<p class="details optional-print no-print">
+												Off the Grid is a Blackbaud internal competition where 
+												teams of up to 4 are given 24 hours to work on any project 
+												that they think would bring value to Blackbaud or its 
+												customers. After 24 hours, the teams present their projects 
+												for judging. 5-7 projects make it to the final round 
+												where they are presented to the entire Products division and voted on.
+										</p>
+										<p class="details optional-print no-print">
+												My project was a solo project for a prototype system 
+												that demonstrated real-time communication between Blackbaud 
+												web products and browser clients using WebSockets.
+										</p>
+								</dd>
+								<dd class="award">
+										<span class="name">Graduated Valedictorian Summa Cum Laude</span>
+										<span class="time">2013</span>
+										<p class="details optional-print no-print">
+												Graduated top of my class with a 4.0 GPA.
+										</p>
+								</dd>
+								<dd class="award">
+										<span class="name">Triangle Technology Executive Council (TTEC) Scholarship</span>
+										<span class="time">2010</span>
+										<p class="details optional-print no-print">
+												A scholarship awarded to two students who demonstrated 
+												excellence and enthusiasm for the field throughout their 
+												most recent internship.
+										</p>
+										<p class="details optional-print no-print">
+												TTEC is a council of executives from various companies 
+												in the Research Triangle area. 
+										</p>
+								</dd>
+								<dd class="award optional-print no-print">
+										<span class="name">University Honors Program</span>
+										<span class="time">2009-2013</span>
+								</dd>
+						</dl>
+				</section>
+				<aside id="social" class="no-print">
+						<ul>
+								<li><span class="icon icon-social-linkedin"></span><a href="http://www.linkedin.com/in/rwdalpe">rwdalpe</a></li>
+						</ul>
+				</aside>
+				<aside id="print-controls" class="no-print">
+						<a href="#" id="print-pg-link">Print One Page Version</a>
+						<a href="#" id="print-full-link">Print Full Version</a>
+				</aside>
+		</body>
 </html>
