@@ -101,6 +101,10 @@
 
     .no-print { display: none; }
 
+    dd.work {
+        page-break-inside: avoid;
+    }
+
     .work ul {
         margin: 0in;
         padding: 0in;
