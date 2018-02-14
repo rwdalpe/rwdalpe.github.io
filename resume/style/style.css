@@ -202,14 +202,15 @@ p {
         clear: both;
     }
 
-    .work, .school, .award { position: relative; }
-    .work .time { 
-        position: absolute; 
-        top: .78em;  
-        right: 0px;
-        text-align: right; 
+    .work,
+    .position-info,
+    .school,
+    .award { 
+        position: relative;
     }
-    .school .time, .award .time {
+    .work .time,
+    .school .time,
+    .award .time {
         position: absolute;
         top: 0px;
         right: 0px;

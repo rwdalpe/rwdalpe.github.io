@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/print.css" />
     <link rel="stylesheet" href="style/ionicons.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $("#print-full-link").on('click', onFullPagePrint);
@@ -49,24 +49,23 @@
             <dt>Work Experience</dt>
             <dd class="work">
                 <header>
-                    <span class="position">Senior Software Engineer</span>
-                    <span class="org">
-                        <span class="name"><a href="https://www.apexlearning.com/">Apex Learning</a></span>, <span class="location">Seattle, WA</span>
-                    </span>
-                    <span class="time">November 2017 - Present</span>
-                </header>
-                <section/>
-            </dd>
-            <dd class="work">
-                <header>
-                    <span class="position">Software Engineer</span>
-                    <span class="org">
-                        <span class="name"><a href="https://www.apexlearning.com/">Apex Learning</a></span>, <span class="location">Seattle, WA</span>
-                    </span>
-                    <span class="time">November 2015 - November 2017</span>
+                    <div class="position-info">
+                        <span class="position">Senior Software Engineer</span>
+                        <span class="time">November 2017 - Present</span>
+                    </div>
+                    <div class="position-info">
+                        <span class="position">Software Engineer</span>
+                        <span class="org">
+                            <span class="name"><a href="https://www.apexlearning.com/">Apex Learning</a></span>, <span class="location">Seattle, WA</span>
+                        </span>
+                        <span class="time">November 2015 - November 2017</span>
+                    </div>
                 </header>
                 <section>
                     <ul>
+                        <li>
+                            Mentored new engineering hires and conducted many technical panels and discussions to distribute knowledge and skill development throughout the technology department.
+                        </li>
                         <li>
                             Developed C# WCF &amp; WebAPI services, Java Tomcat applications, and Typescript node.js services. Developed unit, integration, and performance test suites for those applications.
                         </li>
@@ -78,8 +77,7 @@
                         </li>
                         <li>
                             Improved performance of core, customer-facing applications and reports at the database, application, and infrastructure level.
-                            Improved multiple key, sub-second transaction response times by 10-200% and key reporting transaction
-                            response times by 50-1500%.
+                            Improved multiple key, sub-second transaction response times by 10-200% and key reporting transaction response times by 50-1500%.
                         </li>    
                         <li>
                             Practiced CI and immutable infrastructure for deployments across multiple environments in AWS using Chef and packer.
@@ -87,29 +85,26 @@
                         <li>
                             Worked with a cross-functional team of engineers to guarantee 99.9% uptime of core business applications.
                         </li>
-                        <li>
-                            Mentored new engineering hires and conducted many technical panels and discussions to distribute knowledge and skill development throughout the technology department.
-                        </li>
                     </ul>
                 </section>
             </dd>
             <dd class="work">
                 <header>
-                    <span class="position">Software Developer</span>
-                    <span class="org">
-                        <span class="name"><a href="https://www.paizo.com/">Paizo</a></span>, <span class="location">Redmond, WA</span>
-                    </span>
-                    <span class="time">September 2014 - November 2015</span>
+                    <div class="position-info">
+                        <span class="position">Software Developer</span>
+                        <span class="org">
+                            <span class="name"><a href="https://www.paizo.com/">Paizo</a></span>, <span class="location">Redmond, WA</span>
+                        </span>
+                        <span class="time">September 2014 - November 2015</span>
+                    </div>
                 </header>
                 <section>
                     <ul>
                         <li>
-                            Designed and implemented distributed WCF services for critical business infrastructure including forums, content management,
-                            and user management.
+                            Designed and implemented distributed WCF services for critical business infrastructure including forums, content management, and user management.
                         </li>
                         <li>
-                            Designed and implemented a data access layer with change auditing and support for synchronizing disconnected object graphs
-                            using Entity Framework 6.
+                            Designed and implemented a data access layer with change auditing and support for synchronizing disconnected object graphs using Entity Framework 6.
                         </li>
                         <li>
                             Configured and managed multiple MariaDB Galera clusters, including automated node deployment and scheduled backups.
@@ -118,8 +113,7 @@
                             Developed suites of unit, integration, and performance tests to enhance quality and verify system stability.
                         </li>
                         <li>
-                            Implemented automated, no-downtime deployments and configuration management for multiple types of instances in EC2 using
-                            Puppet and MCollective.
+                            Implemented automated, no-downtime deployments and configuration management for multiple types of instances in EC2 using Puppet and MCollective.
                         </li>
                         <li>
                             Integrated Apache Solr indexing and searching and designed multiple Solr schemas.
@@ -132,11 +126,13 @@
             </dd>
             <dd class="work">
                 <header>
-                    <span class="position">Software Engineer II</span>
-                    <span class="org">
-                        <span class="name"><a href="https://www.blackbaud.com/">Blackbaud</a></span>, <span class="location">Charleston, SC</span>
-                    </span>
-                    <span class="time">February 2014 - September 2014</span>
+                    <div class="position-info">
+                        <span class="position">Software Engineer II</span>
+                        <span class="org">
+                            <span class="name"><a href="https://www.blackbaud.com/">Blackbaud</a></span>, <span class="location">Charleston, SC</span>
+                        </span>
+                        <span class="time">February 2014 - September 2014</span>
+                    </div>
                 </header>
                 <section>
                     <ul>
@@ -147,8 +143,7 @@
                             Pursued a goal to create a stronger developer ecosystem for internal and external developers using our APIs.
                         </li>
                         <li>
-                            Researched and designed an API facade layer made to bypass the complexity and ongoing change of our internal services. Usable
-                            by internal and external developers.
+                            Researched and designed an API facade layer made to bypass the complexity and ongoing change of our internal services. Usable by internal and external developers.
                         </li>
                         <li>
                             Mentored interns and led them on a project to improve application ticketing performance.
@@ -164,11 +159,13 @@
             </dd>
             <dd class="work optional-print no-print">
                 <header>
-                    <span class="position">Software Engineer I</span>
-                    <span class="org">
-                        <span class="name"><a href="https://www.blackbaud.com/">Blackbaud</a></span>, <span class="location">Charleston, SC</span>
-                    </span>
-                    <span class="time">June 2013 - January 2014</span>
+                    <div class="position-info">
+                        <span class="position">Software Engineer I</span>
+                        <span class="org">
+                            <span class="name"><a href="https://www.blackbaud.com/">Blackbaud</a></span>, <span class="location">Charleston, SC</span>
+                        </span>
+                        <span class="time">June 2013 - January 2014</span>
+                    </div>
                 </header>
                 <section>
                     <ul>
@@ -179,8 +176,7 @@
                             and MS SQL Server.
                         </li>
                         <li>
-                            Researched, designed, and implemented a pub-sub system for real-time, data-driven notifications using WebSockets. Designed
-                            for pushing data from Blackbaud products to browser or mobile clients.
+                            Researched, designed, and implemented a pub-sub system for real-time, data-driven notifications using WebSockets. Designed for pushing data from Blackbaud products to browser or mobile clients.
                         </li>
                         <li>
                             Worked with supporting teams to debug and resolve customer issues in live production environments.
@@ -193,12 +189,14 @@
             </dd>
             <dd class="work optional-print no-print">
                 <header>
-                    <span class="position">Software Engineering Intern</span>
-                    <span class="org">
-                        <span class="name"><a href="http://www.motorolasolutions.com">Motorola Solutions</a></span>,
-                    <span class="location">Akron, OH</span>
-                    </span>
-                    <span class="time">May-August 2012</span>
+                    <div class="position-info">
+                        <span class="position">Software Engineering Intern</span>
+                        <span class="org">
+                            <span class="name"><a href="http://www.motorolasolutions.com">Motorola Solutions</a></span>,
+                        <span class="location">Akron, OH</span>
+                        </span>
+                        <span class="time">May-August 2012</span>
+                    </div>
                 </header>
                 <section>
                     <ul>
@@ -209,19 +207,20 @@
                             Created a documented iOS framework to allow client applications to interact with a new product's Web Service API.
                         </li>
                         <li>
-                            Increased my understanding of the interactions between different business units within a company and how best to facilitate
-                            good interactions.
+                            Increased my understanding of the interactions between different business units within a company and how best to facilitate good interactions.
                         </li>
                     </ul>
                 </section>
             </dd>
             <dd class="work optional-print no-print">
                 <header>
-                    <span class="position">Software Engineering Intern</span>
-                    <span class="org">
-                        <span class="name"><a href="http://www.motorolasolutions.com">Motorola</a></span>, <span class="location">Akron, OH</span>
-                    </span>
-                    <span class="time">May-August 2010</span>
+                    <div class="position-info">
+                        <span class="position">Software Engineering Intern</span>
+                        <span class="org">
+                            <span class="name"><a href="http://www.motorolasolutions.com">Motorola</a></span>, <span class="location">Akron, OH</span>
+                        </span>
+                        <span class="time">May-August 2010</span>
+                    </div>
                 </header>
                 <section>
                     <ul>
@@ -245,9 +244,6 @@
             </dd>
             <dd class="skill">
                 Languages: C#, Java, Typescript, Javascript, SQL, Ruby, Python, XSLT 1.0 &amp; 2.0, VB.NET
-            </dd>
-            <dd class="skill">
-                Experienced with Windows and Linux based operating systems
             </dd>
             <dt>Education</dt>
             <dd class="school">

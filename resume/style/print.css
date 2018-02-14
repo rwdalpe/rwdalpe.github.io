@@ -122,10 +122,10 @@
         margin-top: 2pt;
         margin-bottom: 2pt;
     }
-    .work, .school, .award { position: relative; }
+    .work, .position-info, .school, .award { position: relative; }
     .work .time { 
         position: absolute; 
-        top: 7.1pt;  
+        top: 0in;  
         right: 0in;
         text-align: right; 
     }
