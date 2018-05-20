@@ -135,4 +135,8 @@
         right: 0in;
         text-align: right;
     }
+
+    .award p {
+        margin-left: 15pt;
+    }
 }
