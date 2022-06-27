@@ -99,7 +99,7 @@
         clear: both;
     }
 
-    .no-print { display: none; }
+    .no-print, .work li.no-print { display: none; }
 
     dd.work {
         page-break-inside: avoid;
